@@ -1,6 +1,6 @@
 cask "yabaibar" do
-  version "3.0.0"
-  sha256 "347afa3aeb4d20addf8172dbf08166ab63e5e7b687235c13a640574f497bc8e6"
+  version "3.1.0"
+  sha256 "cbe66881799749b99cefa9bf707c44f565f8b4a561057e30d32c8d9a36943c1b"
 
   url "https://github.com/jerickgm89/yabaiDynamicIsland/releases/download/v#{version}/YabaiBar-#{version}.dmg"
   name "YabaiBar"
@@ -26,8 +26,10 @@ cask "yabaibar" do
   ]
 
   caveats <<~EOS
-    For now YabaiBar only supports the 2021 MacBook Pro with M1 Pro or M1 Max (14" and 16"),
-    with a notch. On M2 and later the notch has a different width and the island may look off.
+    YabaiBar measures the notch on your screen, so it adapts to any MacBook with a notch:
+    MacBook Pro from 2021 and MacBook Air from 2022. It has been tested on the 16" M1 Pro.
+    External displays, Macs without a notch and the OLED MacBook Pro with Dynamic Island
+    are not supported yet.
 
     It needs yabai installed and running. Read its wiki to configure it first:
       https://github.com/asmvik/yabai/wiki
