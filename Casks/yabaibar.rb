@@ -1,6 +1,6 @@
 cask "yabaibar" do
-  version "3.1.0"
-  sha256 "cbe66881799749b99cefa9bf707c44f565f8b4a561057e30d32c8d9a36943c1b"
+  version "3.2.0"
+  sha256 "3a842f1c38d3266e13b88fe951023c3897ce673b2717936cbfe020b7d819cb65"
 
   url "https://github.com/jerickgm89/yabaiDynamicIsland/releases/download/v#{version}/YabaiBar-#{version}.dmg"
   name "YabaiBar"
