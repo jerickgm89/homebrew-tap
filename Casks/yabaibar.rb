@@ -1,6 +1,6 @@
 cask "yabaibar" do
-  version "3.3.0"
-  sha256 "d16120ead995c488d5b4ca471a2063b3d8877b85891649891b92790821099b1e"
+  version "3.4.0"
+  sha256 "d62d5199151652ea1c3bc43a1ab30df9ad59592c4b3962ba01b64419bf98cb8b"
 
   url "https://github.com/jerickgm89/yabaiDynamicIsland/releases/download/v#{version}/YabaiBar-#{version}.dmg"
   name "YabaiBar"
@@ -16,6 +16,8 @@ cask "yabaibar" do
   depends_on macos: :sonoma
 
   app "YabaiBar.app"
+  # El ayudante de línea de comandos (los hooks de Claude Code usan la ruta de dentro de la app, no este enlace)
+  binary "#{appdir}/YabaiBar.app/Contents/Helpers/yb"
 
   uninstall quit: "com.jerickdev.yabaibar"
 
